@@ -1,4 +1,6 @@
 Turf::Application.routes.draw do
+  resources :tallies
+
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   root  'sessions#new'
