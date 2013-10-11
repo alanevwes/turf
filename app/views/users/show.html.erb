@@ -10,5 +10,17 @@
   <%= @user.email %>
 </p>
 
+<% @users.each do |user| %>
+	<tr>
+       <td><%= user.name %></td>
+       <td><%= user.email %></td>
+    </tr>
+<% end %>
+
+  <div class="span8">
+      <h1>Tallies (<%= @user.tallies.count %>)</h1>
+      <%= link_to 'Turf', turf_path %>
+  </div>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
