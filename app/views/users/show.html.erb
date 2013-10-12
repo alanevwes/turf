@@ -14,11 +14,12 @@
 	<tr>
        <td><%= user.name %></td>
        <td><%= user.email %></td>
+       <td><%= user.tallies.count %></td>
     </tr>
 <% end %>
 
   <div class="span8">
-      <h1>Tallies (<%= @user.tallies.count %>)</h1>
+      <h1>Tallies (<%= @user.tallies.amount %>)</h1>
       <%= link_to 'Turf', turf_path %>
   </div>
 
