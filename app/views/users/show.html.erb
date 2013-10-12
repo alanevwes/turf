@@ -18,8 +18,12 @@
     </tr>
 <% end %>
 
+      <ol class="tallies">
+        <%= render @tallies %>
+      </ol>
+      <%= will_paginate @tallies %>
+
   <div class="span8">
-      <h1>Tallies (<%= @user.tallies.amount %>)</h1>
       <%= link_to 'Turf', turf_path %>
   </div>
 
