@@ -2,4 +2,5 @@ class Tally < ActiveRecord::Base
 	belongs_to :user
 	default_scope -> { order('created_at DESC') }
 	validates :user_id, presence: true
+	make_voteable
 end

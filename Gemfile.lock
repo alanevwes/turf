@@ -90,6 +90,8 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    make_voteable (0.0.2)
+      activerecord (>= 3.0.0)
     mime-types (1.25)
     mini_portile (0.5.1)
     minitest (4.7.5)
@@ -190,6 +192,7 @@ DEPENDENCIES
   faker (= 1.1.2)
   jbuilder (= 1.0.2)
   jquery-rails (= 2.2.1)
+  make_voteable
   pg (= 0.15.1)
   rails (= 4.0.0)
   rails_12factor (= 0.0.2)

@@ -12,7 +12,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @users = User.all
-    @tallies = @user.tallies.paginate(page: params[:page])
+    @tallies = @user.tallies
   end
 
   # GET /users/new
